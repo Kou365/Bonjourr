@@ -1044,15 +1044,16 @@
 }
 
 #export > div {
-	display: flex;
+	display: none;
 	justify-content: space-around;
 	margin-top: 12px;
 }
 
 #area_export {
 	width: 100%;
-	min-height: 100px;
+	min-height: 200px;
 	max-height: 3000px;
+	margin-top: 0.65em;
 	padding: 0.65em 1.3em;
 	font-size: 13px;
 	line-break: anywhere;
@@ -1104,29 +1105,8 @@
 	}
 }
 
-#resetContainer {
-	margin-top: 1rem;
-
-	.param {
-		padding: $settingsMargin 1.3em;
-	}
-
-	#reset_conf,
-	#reset_first {
-		display: none;
-
-		&.shown {
-			display: flex;
-		}
-	}
-
-	#reset_first {
-		justify-content: center;
-	}
-
-	#b_resetno {
-		color: var(--color-red);
-	}
+#reset_conf {
+	display: none;
 }
 
 //

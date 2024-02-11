@@ -1114,7 +1114,7 @@
 	</div>
 
 	<div class="param">
-		<div class="importexport-tabs">
+		<div class="importexport-tabs" style="display: none">
 			<button id="s_export" class="trn opt-hider">Export</button>
 			<button id="s_import" class="trn opt-hider">Import</button>
 			<div class="glider"></div>
@@ -1128,7 +1128,6 @@
 
 				<div id="save_wrapper">
 					<button id="b_exportfile" class="inline-btn trn">Export as file</button>
-					<a id="downloadfile" href="" download="" aria-hidden="true" tabindex="-1">export download link</a>
 				</div>
 			</div>
 		</div>
@@ -1144,20 +1143,36 @@
 				<button id="b_importtext" class="inline-btn trn">Import</button>
 			</div>
 		</div>
-	</div>
-</div>
 
-<div id="resetContainer">
-	<div class="param">
-		<div id="reset_first" class="wrapper shown">
-			<button id="b_resetconf" class="inline-btn trn">Reset settings</button>
+		<div id="importtext-wrapper">
+			<hr />
+
+			<div class="wrapper">
+				<label for="b_importtext" class="trn">Apply changes</label>
+				<button id="b_importtext" class="param-btn trn">Apply & reload</button>
+			</div>
+		</div>
+
+		<hr />
+
+		<div class="wrapper">
+			<label for="b_exportfile" class="trn">Export settings as file</label>
+			<button id="b_exportfile" class="param-btn trn">Export</button>
+			<a id="downloadfile" href="" download="" aria-hidden="true" tabindex="-1">Export download link</a>
+		</div>
+
+		<hr />
+
+		<div id="reset_first" class="wrapper">
+			<label for="b_resetconf" class="trn">Reset settings</label>
+			<button id="b_resetconf" class="param-btn btn-red trn">Reset</button>
 		</div>
 
 		<div id="reset_conf" class="wrapper">
-			<span class="trn">Are you sure ?</span>
+			<label for="b_resetyes" class="trn">Are you sure ?</label>
 			<div>
-				<button id="b_resetyes" class="inline-btn trn">I am sure</button>
-				<button id="b_resetno" class="inline-btn trn">No, go back</button>
+				<button id="b_resetyes" class="param-btn btn-red trn">I am sure</button>
+				<button id="b_resetno" class="param-btn trn">No, go back</button>
 			</div>
 		</div>
 	</div>
